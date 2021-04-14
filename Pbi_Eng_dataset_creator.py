@@ -11,20 +11,22 @@ html_head_code = r'''
 <Doc id="bilingual_dataset bi01" lang="bi-lingual">
 <Header type='text'>
     <encodingDesc>
-        <projectDesc>Bi-lingual Corpora</projectDesc>
-        <samplingDesc>This Document contain Only 10 sentences of bilingual data</samplingDesc>
+        <projectDesc>--------------------Bi-lingual Corpora--------------------</projectDesc><br>
+        <samplingDesc>--------------------This Document contain 1 Lac sentences of bilingual data--------------------</samplingDesc><br>
     </encodingDesc>
     <sourceDesc>
-        <source>Wikipeida</source>
-        <source>Gyan  Nidhi</source>
-        <source>TDIL</source>
+        <source>--------------------Source--------------------</source><br>
+        <source>  1.             Wikipeida</source>
+        <source>  2.             Gyan  Nidhi</source>
+        <source>  3.             TDIL</source><br>
     </sourceDesc>
     <creation>
+        <creation>--------------------creation--------------------</creation><br>
         <date>27-May-2020</date>
-        <inputter>Manpreet Singh Lehal</inputter>
+        <inputter>--------------------Manpreet Singh Lehal, Dr. Vishal Goyal, Dr Ajit Kumar--------------------</inputter>
         <proof></proof>
     </creation>
-    <langUsage>Punjabi, English</langUsage>
+    <langUsage>--------------------Punjabi, English--------------------</langUsage>
     <wsdUsage>
         <writingSystem id="ISO/IEC 10646">Universal Multiple-Octet Coded Character Set(UCS).</writingSystem>
     </wsdUsage>
@@ -37,7 +39,7 @@ html_head_code = r'''
 '''
 html_foot_code = r'''</body></text></html></Doc>'''
 
-with open('biCorpusDataset_50k.xml','w',encoding='utf-8') as dataset_file:
+with open('biCorpusDataset_50k.html','w',encoding='utf-8') as dataset_file:
     dataset_file.write(html_head_code+'\n')
     for i in range(50000):
         dataset_file.write('<pa>'+punjabi_data[i].replace('\n','')+'</pa></br>\n'+'<en>'+english_data[i].replace('\n','')+'</en></br></br>')

@@ -36,6 +36,6 @@ html_foot_code = r'''</body></text></html></Doc>'''
 with open('Pbi_CorpusDataset_50k.html','w',encoding='utf-8') as dataset_file:
     dataset_file.write(html_head_code+'\n')
     for i in range(50000):
-        dataset_file.write('<p>'+punjabi_data[i].replace('\n','')+'<p></br>')
+        dataset_file.write('<p>'+punjabi_data[i].replace('\n','')+'<p>')
     dataset_file.write(html_foot_code)
 dataset_file.close()

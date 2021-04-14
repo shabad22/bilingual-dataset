@@ -8,7 +8,7 @@ html_head_code = r'''
 <Header type='text'>
     <encodingDesc>
         <projectDesc>English Corpora</projectDesc>
-        <samplingDesc>This Document contain Only 10 sentences of english data</samplingDesc>
+        <samplingDesc>This Document contain 1Lac sentences of english data</samplingDesc>
     </encodingDesc>
     <sourceDesc>
         <source>Wikipeida</source>
